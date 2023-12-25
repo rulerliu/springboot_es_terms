@@ -50,10 +50,6 @@ public class TestServiceImpl implements TestService {
     public Map<String, Map<String, Long>> getCountMap(ResourceInstanceQueryVO query) {
         log.info("获取资源实例数量接口入参为：{}", JSONUtil.toJsonStr(query));
 
-//        if (StringUtils.isEmpty(query.getResourceInstanceFieldUuid())) {
-//            throw new AppException("获取资源实例数量接口-资源实例字段uuid不能为空");
-//        }
-
         Map<String, Map<String, Long>> data = new HashMap<>();
         String searchCriteria = query.getSearchCriteria();
         List<String> searchCriteriaList = new ArrayList<>();
