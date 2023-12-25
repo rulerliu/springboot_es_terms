@@ -1,0 +1,6 @@
+elasticsearch:
+  cluster:
+    password: null
+#    servers: 192.168.208.51:9200
+    servers: 192.168.209.124:32000
+    username: null
